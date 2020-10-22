@@ -1,0 +1,60 @@
+
+
+@mixin card ($color-card-bg, $color-shadow){
+    background-color: $color-card-bg;
+    box-shadow: $color-shadow;
+}
+
+@mixin button($color-green-success, $color-txt-button, $color-shadow) {
+    background: $color-green-success;
+    color: $color-txt-button;
+    box-shadow: $color-shadow;
+    border-radius: 5px;
+}
+
+@mixin icon($size-icon) {
+    width: $size-icon;
+    height: $size-icon;
+}
+
+@mixin flag($size-flag) {
+    object-fit: cover;
+    width: 100%;
+    height: $size-flag;
+}
+
+@mixin photo($color-shadow) {
+    box-shadow: $color-shadow;
+    border-radius: 50%;
+}
+
+@mixin currency($size-currency, $radius-currency) {
+    width: $size-currency;
+    height: $size-currency;
+    border-radius: $radius-currency;
+}
+
+@mixin badge($color-shadow, $radius-badge) {
+    box-shadow: $color-shadow;
+    border-radius: $radius-badge;
+}
+
+
+/* Arrows */
+@mixin arrow-up($size-arrow, $color-green-success){
+    width: 0; 
+    height: 0; 
+    border-left: $size-arrow solid transparent;
+    border-right: $size-arrow solid transparent;
+
+    border-bottom: $size-arrow solid $color-green-success;
+}
+
+@mixin arrow-down($size-arrow, $color-red-alert){
+    width: 0; 
+    height: 0; 
+    border-left: $size-arrow solid transparent;
+    border-right: $size-arrow solid transparent;
+  
+    border-top: $size-arrow solid $color-red-alert;
+}
