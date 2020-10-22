@@ -340,4 +340,8 @@ template {
 [hidden] {
   display: none;
 }
+
+* {
+  border: 1px solid red;
+}
 /*# sourceMappingURL=style.css.map */
