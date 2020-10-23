@@ -1,47 +1,51 @@
-
-
-@mixin card ($color-card-bg, $color-shadow){
+@mixin white-block{
     background-color: $color-card-bg;
     box-shadow: $color-shadow;
 }
 
-@mixin button($color-green-success, $color-txt-button, $color-shadow) {
+@mixin white-card{
+    background-color: $color-card-bg;
+    box-shadow: $color-shadow;
+    border-radius: $radius-card;
+}
+
+@mixin button{
     background: $color-green-success;
     color: $color-txt-button;
     box-shadow: $color-shadow;
     border-radius: 5px;
 }
 
-@mixin icon($size-icon) {
+@mixin icon{
     width: $size-icon;
     height: $size-icon;
 }
 
-@mixin flag($size-flag) {
+@mixin flag{
     object-fit: cover;
     width: 100%;
     height: $size-flag;
 }
 
-@mixin photo($color-shadow) {
+@mixin photo{
     box-shadow: $color-shadow;
     border-radius: 50%;
 }
 
-@mixin currency($size-currency, $radius-currency) {
+@mixin currency{
     width: $size-currency;
     height: $size-currency;
     border-radius: $radius-currency;
 }
 
-@mixin badge($color-shadow, $radius-badge) {
+@mixin badge{
     box-shadow: $color-shadow;
     border-radius: $radius-badge;
 }
 
 
 /* Arrows */
-@mixin arrow-up($size-arrow, $color-green-success){
+@mixin arrow-up{
     width: 0; 
     height: 0; 
     border-left: $size-arrow solid transparent;
@@ -50,7 +54,7 @@
     border-bottom: $size-arrow solid $color-green-success;
 }
 
-@mixin arrow-down($size-arrow, $color-red-alert){
+@mixin arrow-down{
     width: 0; 
     height: 0; 
     border-left: $size-arrow solid transparent;

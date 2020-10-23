@@ -6,7 +6,68 @@
     https://xd.adobe.com/view/1931e7ae-d684-4c2b-a501-3f0b23fe0716-4c62/screen/2dc89f7e-7052-4df8-b5b4-e5750d44896b/specs/ 
 */
 
+/* 
 *{
-    border: 1px solid red;
+    border: 1px solid rgb(0, 0, 0);
+} 
+*/
+
+body{
     font-family: 'Inter', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+
+.wrapper{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 200px 5fr;
+    grid-template-rows: 1fr;
+    background-color: $color-main-bg;
+}
+
+.main{
+    margin: 50px 100px auto;
+}
+
+.sideMenu{
+    @include white-block;
+    display: flex;
+    flex-direction: column;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+}
+
+.overview{
+    display: flex;
+    flex-direction: row;
+}
+
+.countries{
+    @include white-block;
+    display: flex;
+    flex-direction: row;
+}
+
+.container{
+    display: flex;
+}
+
+.teamMembers{
+    flex-basis: 50%;
+    &__card{
+        @include white-card;
+    }
+}
+
+.comparison{
+    flex-basis:50%;
+    &__card{
+      @include white-card;  
+    }
+    
 }
