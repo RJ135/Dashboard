@@ -356,11 +356,12 @@ template {
 /* Link source all style AdobeXD
     https://xd.adobe.com/view/1931e7ae-d684-4c2b-a501-3f0b23fe0716-4c62/screen/2dc89f7e-7052-4df8-b5b4-e5750d44896b/specs/ 
 */
-/* 
-*{
-    border: 1px solid rgb(0, 0, 0);
-} 
-*/
+* {
+  /* border: 1px solid rgb(0, 0, 0); */
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 body {
   font-family: 'Inter', sans-serif;
 }
@@ -395,6 +396,54 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  text-align: center;
+  padding: 1.5rem 1.5rem;
+}
+
+.sideMenu__item {
+  width: 150px;
+  height: 120px;
+  padding: 1.5rem;
+  color: #8990ad;
+}
+
+.sideMenu__item:last-child {
+  margin-top: auto;
+}
+
+.sideMenu__item:hover {
+  background-color: white;
+  -webkit-box-shadow: 0px 3px 26px rgba(0, 0, 0, 0.09);
+          box-shadow: 0px 3px 26px rgba(0, 0, 0, 0.09);
+  border-radius: 4px;
+  color: #11193c;
+}
+
+.sideMenu__item:hover .sideMenu__svg[stroke] {
+  stroke: #2464fc;
+}
+
+.sideMenu__item:hover .sideMenu__svg path[fill="#b5bad0"] {
+  fill: #2464fc;
+}
+
+.sideMenu__item:hover .sideMenu__svg path[fill="none"] {
+  stroke: #2464fc;
+}
+
+.sideMenu__img {
+  width: 2.2rem;
+  height: auto;
+}
+
+.sideMenu__text {
+  margin-bottom: auto;
 }
 
 .header {

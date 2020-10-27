@@ -6,17 +6,19 @@
     https://xd.adobe.com/view/1931e7ae-d684-4c2b-a501-3f0b23fe0716-4c62/screen/2dc89f7e-7052-4df8-b5b4-e5750d44896b/specs/ 
 */
 
-/* 
+
 *{
-    border: 1px solid rgb(0, 0, 0);
+    /* border: 1px solid rgb(0, 0, 0); */
+    box-sizing: border-box;
 } 
-*/
+
 
 body{
     font-family: 'Inter', sans-serif;
 }
 a{
     text-decoration: none;
+    
 }
 
 .wrapper{
@@ -35,7 +37,45 @@ a{
     @include white-block;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    padding: 1.5rem 1.5rem;
+
+    &__item{
+        width: 150px;
+        height: 120px;
+        padding: 1.5rem;
+        color: $color-nav-inactive;
+        &:last-child{
+            margin-top:auto;
+        }
+
+        &:hover {
+            @include white-card;
+            color: $color-text-primary;
+
+            .sideMenu__svg[stroke]{
+                stroke: $color-blue-txt;
+            }
+            .sideMenu__svg path[fill ="#b5bad0"]{
+                fill: $color-blue-txt;
+            }
+            .sideMenu__svg path[fill="none"]{
+                stroke: $color-blue-txt;
+            }
+        }
+        
+    }
+    &__img{
+        width: 2.2rem;
+        height: auto;
+    }
+    &__text{
+        margin-bottom: auto;
+    }
 }
+
 
 .header{
     display: flex;
