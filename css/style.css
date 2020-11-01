@@ -630,9 +630,9 @@ a {
 .overview__arrowUp {
   width: 0;
   height: 0;
-  border-left: 7px solid transparent;
-  border-right: 7px solid transparent;
-  border-bottom: 7px solid #00e38c;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 8px solid #00e38c;
   font-size: 1rem;
   position: relative;
   bottom: 0;
@@ -641,9 +641,9 @@ a {
 .overview__arrowDown {
   width: 0;
   height: 0;
-  border-left: 7px solid transparent;
-  border-right: 7px solid transparent;
-  border-top: 7px solid #ff4b75;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 8px solid #ff4b75;
   font-size: 1rem;
   position: relative;
   top: 0;
@@ -686,6 +686,72 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2.8rem 0;
+}
+
+.countries__bloc {
+  text-align: center;
+}
+
+.countries__bloc svg {
+  width: 9rem;
+  height: auto;
+}
+
+.countries__country {
+  color: #495172;
+  margin: 0;
+}
+
+.countries__value {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 1.2rem 0 1.4rem;
+}
+
+.countries__value p {
+  margin: 0;
+  font-size: 1.7rem;
+  font-weight: 700;
+  padding-right: 0.6rem;
+}
+
+.countries__arrowUp {
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 8px solid #00e38c;
+  font-size: 1rem;
+  position: relative;
+  bottom: 0;
+}
+
+.countries__arrowDown {
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 8px solid #ff4b75;
+  font-size: 1rem;
+  position: relative;
+  top: 0;
 }
 
 .container {

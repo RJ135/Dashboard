@@ -223,6 +223,48 @@ a{
     @include white-block;
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2.8rem 0;
+    &__bloc{
+        text-align: center;
+        svg{
+            width: 9rem;
+            height: auto;
+        }
+    }
+    &__country{
+        color: $color-text-country;
+        margin: 0;
+    }
+    &__value{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: 1.2rem 0 1.4rem;
+        p{
+            margin: 0;
+            font-size: 1.7rem;
+            font-weight: 700;
+            padding-right: 0.6rem;
+        }
+    }
+    &__arrowUp{
+        @include arrow-up;
+        font-size: 1rem;
+        position: relative;
+        bottom: 0;
+    }
+    &__arrowDown {
+        @include arrow-down;
+        font-size: 1rem;
+        position: relative;
+        top: 0;
+    }    
+
+        
+    
 }
 //====Container of Team Members and Comparison====
 .container{

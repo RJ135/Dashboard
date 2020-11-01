@@ -18,6 +18,7 @@ $color-nav-inactive : rgba(137, 144, 173, 1);
 /* Texts */
 $color-text-primary : rgba(17, 25, 60, 1); 
 $color-text-secondary : rgba(137, 144, 173, 1);
+$color-text-country : rgba(73, 81, 114, 1);
 $letter-spacing-country : 2.91px;
 
 /* Border line*/
@@ -40,7 +41,7 @@ $background-currency: lighten($color-blue-txt, 40%) ;
 $radius-currency : 100px;
 
 /* Arrow */
-$size-arrow : 7px;
+$size-arrow : 8px;
 
 /* Flag */
 $size-flag: 21px;
