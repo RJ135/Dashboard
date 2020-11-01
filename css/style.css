@@ -346,6 +346,7 @@ template {
 /* Shadow */
 /* Nav items */
 /* Texts */
+/* Border line*/
 /* Card */
 /* Badge  */
 /* Icons nav */
@@ -370,6 +371,14 @@ a {
   text-decoration: none;
 }
 
+.success {
+  color: #00e38c;
+}
+
+.alert {
+  color: #ff4b75;
+}
+
 .wrapper {
   height: 100vh;
   display: -ms-grid;
@@ -382,7 +391,11 @@ a {
 }
 
 .main {
-  margin: 50px 100px auto;
+  margin: auto 6rem;
+}
+
+.main > * {
+  margin: 2.5rem auto;
 }
 
 .sideMenu {
@@ -411,6 +424,8 @@ a {
   height: 120px;
   padding: 1.5rem;
   color: #8990ad;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
 }
 
 .sideMenu__item:last-child {
@@ -418,6 +433,8 @@ a {
 }
 
 .sideMenu__item:hover {
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
   background-color: white;
   -webkit-box-shadow: 0px 3px 26px rgba(0, 0, 0, 0.09);
           box-shadow: 0px 3px 26px rgba(0, 0, 0, 0.09);
@@ -427,14 +444,20 @@ a {
 
 .sideMenu__item:hover .sideMenu__svg[stroke] {
   stroke: #2464fc;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
 }
 
 .sideMenu__item:hover .sideMenu__svg path[fill="#b5bad0"] {
   fill: #2464fc;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
 }
 
 .sideMenu__item:hover .sideMenu__svg path[fill="none"] {
   stroke: #2464fc;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
 }
 
 .sideMenu__img {
@@ -510,27 +533,22 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   height: 55px;
   width: 135px;
   border: none;
-  -webkit-transition: all 0.4s ease 0s;
-  transition: all 0.4s ease 0s;
-  -webkit-transform: scale(1);
-          transform: scale(1);
-}
-
-.header__button p {
-  padding: 0 10px;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
 }
 
 .header__button:hover {
-  -webkit-transform: scale(1.03);
-          transform: scale(1.03);
+  -webkit-transform: scale(1.04);
+          transform: scale(1.04);
   letter-spacing: 1px;
-  -webkit-transition: all 0.4s ease 0s;
-  transition: all 0.4s ease 0s;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
 }
 
 .header__addUnitIcon {
@@ -556,6 +574,105 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0;
+  /* margin: 2rem auto; */
+}
+
+.overview__bloc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.overview__line {
+  border-right: 2px solid rgba(137, 144, 173, 0.2);
+  margin: 0;
+  padding: 0;
+}
+
+.overview__title {
+  font-weight: 400;
+  letter-spacing: 2.9px;
+  color: #8990ad;
+  margin-top: auto;
+  margin-bottom: 2rem;
+}
+
+.overview__data {
+  margin-bottom: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.overview__currentValue {
+  padding-right: 22px;
+  font-size: 2.1rem;
+  font-weight: 400;
+}
+
+.overview__arrowUp {
+  width: 0;
+  height: 0;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-bottom: 7px solid #00e38c;
+  font-size: 1rem;
+  position: relative;
+  bottom: 0;
+}
+
+.overview__arrowDown {
+  width: 0;
+  height: 0;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-top: 7px solid #ff4b75;
+  font-size: 1rem;
+  position: relative;
+  top: 0;
+}
+
+.overview__percent {
+  font-size: 0.9rem;
+  padding-left: 0.5rem;
+}
+
+.overview__currencies {
+  margin-top: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.overview__currencies > * {
+  margin-right: 1rem;
+}
+
+.overview__currency {
+  width: 34px;
+  height: 34px;
+  border-radius: 100px;
+  background-color: #edf2ff;
 }
 
 .countries {

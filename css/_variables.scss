@@ -6,7 +6,7 @@ $color-card-bg :rgba(255, 255, 255, 1);
 $color-txt-button : rgba(255, 255, 255, 1);
 $color-green-success :rgba(0, 227, 140, 1); 
 $color-red-alert :rgba(255, 75, 117, 1);
-$color-blue-txt :rgba(36, 100, 252, 1);
+$color-blue-txt :rgb(36, 100, 252);
 
 /* Shadow */
 $color-shadow : 0px 3px 26px rgba(0, 0, 0, 0.09);
@@ -20,6 +20,9 @@ $color-text-primary : rgba(17, 25, 60, 1);
 $color-text-secondary : rgba(137, 144, 173, 1);
 $letter-spacing-country : 2.91px;
 
+/* Border line*/
+$color-border-line : rgba(137, 144, 173, 0.2);
+
 /* Card */
 $radius-card : 4px;
 
@@ -32,11 +35,12 @@ $radius-badge : 100px;
 $size-icon : 43px;
 
 /* Currency */
-$size-currency : 33px;
+$size-currency : 34px;
+$background-currency: lighten($color-blue-txt, 40%) ;
 $radius-currency : 100px;
 
 /* Arrow */
-$size-arrow : 60px;
+$size-arrow : 7px;
 
 /* Flag */
 $size-flag: 21px;

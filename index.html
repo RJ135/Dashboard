@@ -90,26 +90,60 @@
             <section class="overview">
                 <div class="overview__bloc">
                     <p class="overview__title">BALANCE</p>
-                    <p class="overview__currentValue">$5900.00<span class="overview__percent"></span></p>
+                    <div class="overview__data">
+                        <span class="overview__currentValue">$5900.00</span>
+                    </div>
                 </div>
+
+                <div class="overview__line"></div>
+
                 <div class="overview__bloc">
                     <p class="overview__title">PROFITS</p>
-                    <p class="overview__currentValue">$950.00<span class="overview__percent">"up" +56%</span></p>
+                    <div class="overview__data">
+                        <span class="overview__currentValue">$950.00</span>
+                        <span class="overview__arrowUp success"></span>
+                        <span class="overview__percent success">+56%</span>
+                    </div>
                 </div>
+
+                <div class="overview__line"></div>
+
                 <div class="overview__bloc">
                     <p class="overview__title">LOSSES</p>
-                    <p class="overview__currentValue">$450.00<span class="overview__percent">"down" +56%</span>
-                    </p>
+                    <div class="overview__data">
+                        <span class="overview__currentValue">$450.00</span>
+                        <span class="overview__arrowDown alert"></span>
+                        <span class="overview__percent alert">+56%</span>
+                    </div>
                 </div>
+
+                <div class="overview__line"></div>
                 <div class="overview__bloc">
                     <p class="overview__title">CURRENCIES</p>
                     <div class="overview__currencies">
-                        <img src="" alt="₿" class="overview__currency">
-                        <img src="" alt="$" class="overview__currency">
-                        <img src="" alt="€" class="overview__currency">
-                        <img src="" alt="¥" class="overview__currency">
+                        <svg viewBox="-12 -8 38 38" class="overview__currency" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:v="https://vecta.io/nano">
+                            <path
+                                d="M9.71 8.9A4.33 4.33 0 0 0 6.75 1.957V.482A.48.48 0 0 0 6.268 0H5.3a.48.48 0 0 0-.482.482V1.93H3.375V.482A.48.48 0 0 0 2.893 0H1.93a.48.48 0 0 0-.482.482V1.93H.483A.48.48 0 0 0 0 2.411V18.8a.48.48 0 0 0 .482.482h.964v1.446a.48.48 0 0 0 .482.482h.964a.48.48 0 0 0 .482-.482v-1.442H4.82v1.446a.48.48 0 0 0 .482.482h.964a.48.48 0 0 0 .482-.482v-1.446H8.04c2.77.033 5.117-2.034 5.435-4.786a5.31 5.31 0 0 0-3.766-5.6zM1.93 3.857h4.34a2.41 2.41 0 1 1 0 4.822H1.93zm6.268 13.5H1.93v-6.75H8.2c1.864 0 3.375 1.51 3.375 3.375s-1.51 3.375-3.375 3.375z"
+                                fill="#2464fc" /></svg>
+                        <svg viewBox="-12 -8 38 38" class="overview__currency" xmlns="http://www.w3.org/2000/svg"
+                            fill="none" stroke="#2464fc" stroke-linecap="square" stroke-miterlimit="10" stroke-width="2"
+                            xmlns:v="https://vecta.io/nano">
+                            <path d="M6.644 1v21" />
+                            <path
+                                d="M11.596 3.613c-1.48-.5-3.037-.74-4.6-.707-2.436.002-5.654 1.062-5.654 3.89 0 5.3 11.315 2.852 11.315 8.486 0 2.8-2.78 3.89-5.657 3.89-1.94.053-3.87-.308-5.658-1.06" />
+                        </svg>
+                        <svg viewBox="-8 -8 38 38" class="overview__currency" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:v="https://vecta.io/nano">
+                            <path
+                                d="M16.477 17.733c-1.228.935-2.742 1.415-4.284 1.357a6.67 6.67 0 0 1-6.786-5.655h6.61V12.02H5.188l-.064-1.414.064-1.414h6.828V7.78h-6.61a6.67 6.67 0 0 1 6.786-5.655c1.543-.057 3.057.426 4.282 1.365l.825.665 1.33-1.65-.826-.666A8.7 8.7 0 0 0 12.192.004c-5.5 0-8.118 3.75-8.915 7.775H0v1.414h3.072C3.026 9.67 3 10.14 3 10.612a14.61 14.61 0 0 0 .068 1.414H0v1.414h3.278c.8 4.025 3.42 7.775 8.915 7.775 2.025.06 4.007-.586 5.607-1.83l.827-.664-1.327-1.654z"
+                                fill="#2464fc" /></svg>
+                        <svg viewBox="-12 -8 38 38" class="overview__currency" xmlns="http://www.w3.org/2000/svg"
+                            fill="none" stroke="#2464fc" stroke-linecap="square" stroke-miterlimit="10" stroke-width="2"
+                            xmlns:v="https://vecta.io/nano">
+                            <path d="M1.4 1.4l5.92 7.894L13.24 1.4M7.186 9.473v9.688" />
+                            <path d="M1.938 9.473h10.495M1.938 13.5h10.495" /></svg>
                     </div>
-
                 </div>
             </section>
 

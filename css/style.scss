@@ -20,6 +20,12 @@ a{
     text-decoration: none;
     
 }
+.success{
+    color: $color-green-success;
+}
+.alert{
+    color: $color-red-alert;
+}
 
 .wrapper{
     height: 100vh;
@@ -30,7 +36,10 @@ a{
 }
 
 .main{
-    margin: 50px 100px auto;
+    margin: auto 6rem;
+    > *{
+        margin: 2.5rem auto;
+    }
 }
 //====Side Menu====
 .sideMenu{
@@ -47,22 +56,27 @@ a{
         height: 120px;
         padding: 1.5rem;
         color: $color-nav-inactive;
+        transition: all 0.3s ease 0s;
         &:last-child{
             margin-top:auto;
         }
 
         &:hover {
+            transition: all 0.3s ease 0s;
             @include white-card;
             color: $color-text-primary;
 
             .sideMenu__svg[stroke]{
                 stroke: $color-blue-txt;
+                transition: all 0.3s ease 0s;
             }
             .sideMenu__svg path[fill ="#b5bad0"]{
                 fill: $color-blue-txt;
+                transition: all 0.3s ease 0s;
             }
             .sideMenu__svg path[fill="none"]{
                 stroke: $color-blue-txt;
+                transition: all 0.3s ease 0s;
             }
         }
         
@@ -113,25 +127,21 @@ a{
         cursor: pointer;
         display: flex;
         align-items: center;
-        justify-content: space-around;
+        justify-content: space-evenly;
         height: 55px;
         width: 135px;
         border: none;
-        transition: all 0.4s ease 0s;
-        transform: scale(1);
-        p{
-            padding: 0 10px ;
-        }
-        
+        transition: all 0.3s ease 0s;
         &:hover{
-            transform: scale(1.03);
+            transform: scale(1.04);
             letter-spacing: 1px;
-            transition: all 0.4s ease 0s;
+            transition: all 0.3s ease 0s;
         }
     }
     &__addUnitIcon{
         height: 24px;
         width: 24px;
+        
     }
     &__photo{
         @include photo;
@@ -147,9 +157,68 @@ a{
 .overview{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    padding: 0;
+    /* margin: 2rem auto; */
+    &__bloc{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    &__line{
+        border-right: 2px solid $color-border-line;
+        margin: 0;
+        padding: 0;
+    }
+    &__title{
+        font-weight: 400;
+        letter-spacing: 2.9px;
+        color: $color-text-secondary;
+        margin-top: auto;
+        margin-bottom: 2rem;
+    }
+    &__data{
+        margin-bottom:auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__currentValue{
+        padding-right: 22px; 
+        font-size: 2.1rem;
+        font-weight: 400;
+    }
+    &__arrowUp {
+        @include arrow-up;
+        font-size: 1rem;
+        position: relative;
+        bottom: 0;
+    }
+    &__arrowDown {
+        @include arrow-down;
+        font-size: 1rem;
+        position: relative;
+        top: 0;
+    }
+    &__percent{
+        font-size: 0.9rem;
+        padding-left: 0.5rem;
+    }
+    &__currencies{
+        margin-top: auto;
+        display: flex;
+        justify-content: space-between;
+        >*{
+            margin-right: 1rem;
+        }
+    }
+    &__currency{
+        @include currency;
+        background-color: $background-currency;
+    }
 }
 
-//====Countries====
+//====Countries==== TODO
 .countries{
     @include white-block;
     display: flex;
