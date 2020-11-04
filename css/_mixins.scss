@@ -39,10 +39,27 @@
 }
 
 @mixin badge{
-    box-shadow: $color-shadow;
     border-radius: $radius-badge;
+    font-size: 0.8rem;
+    margin-left: auto;
+    padding: 0.8rem;
 }
-
+@mixin greenBadge{
+    @include badge;
+    color: $color-green-success;
+    background-color: $opacity-green-badge;
+    
+}
+@mixin blueBadge{
+    @include badge;
+    color: $color-blue-txt;
+    background-color: $opacity-blue-badge;
+}
+@mixin flag {
+    width: 30px;
+    height: auto;
+    border-radius:1px ;
+}
 
 /* Arrows */
 @mixin arrow-up{

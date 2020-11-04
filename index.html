@@ -218,25 +218,31 @@
                         <h2 class="teamMembers__title">Team Members</h2>
                         <a href="#" class="teamMembers__viewAll">View All</a>
                     </div>
-                    <div class="teamMembers__card">
-                        <img src="" alt="photo member" class="teamMembers__photo">
-                        <p class="teamMembers__name">Adrew Johnston</p>
-                        <p class="teamMembers__badge">Top Trader</p>
-                    </div>
-                    <div class="teamMembers__card">
-                        <img src="" alt="photo member" class="teamMembers__photo">
-                        <p class="teamMembers__name">Anna Atkinsons</p>
-                        <p class="teamMembers__badge">Manager</p>
-                    </div>
-                    <div class="teamMembers__card">
-                        <img src="" alt="photo member" class="teamMembers__photo">
-                        <p class="teamMembers__name">Mark Atkinsons</p>
-                        <p class="teamMembers__badge">Top Trader</p>
-                    </div>
-                    <div class="teamMembers__card">
-                        <img src="" alt="photo member" class="teamMembers__photo">
-                        <p class="teamMembers__name">Johanna Tairons</p>
-                        <p class="teamMembers__badge">Manager</p>
+                    <div class="teamMembers__content">
+                        <div class="teamMembers__card">
+                            <!-- <img src="" alt="photo member" class="teamMembers__photo"> -->
+                            <div class="teamMembers__photo"></div>
+                            <p class="teamMembers__name">Adrew Johnston</p>
+                            <p class="teamMembers__badge teamMembers__badge--green">Top Trader</p>
+                        </div>
+                        <div class="teamMembers__card">
+                            <!-- <img src="" alt="photo member" class="teamMembers__photo"> -->
+                            <div class="teamMembers__photo"></div>
+                            <p class="teamMembers__name">Anna Atkinsons</p>
+                            <p class="teamMembers__badge teamMembers__badge--blue">Manager</p>
+                        </div>
+                        <div class="teamMembers__card">
+                            <!-- <img src="" alt="photo member" class="teamMembers__photo"> -->
+                            <div class="teamMembers__photo"></div>
+                            <p class="teamMembers__name">Mark Atkinsons</p>
+                            <p class="teamMembers__badge teamMembers__badge--green">Top Trader</p>
+                        </div>
+                        <div class="teamMembers__card">
+                            <!-- <img src="" alt="photo member" class="teamMembers__photo"> -->
+                            <div class="teamMembers__photo"></div>
+                            <p class="teamMembers__name">Johanna Tairons</p>
+                            <p class="teamMembers__badge teamMembers__badge--blue">Manager</p>
+                        </div>
                     </div>
                 </section>
 
@@ -246,28 +252,43 @@
                         <h2 class="comparison__title">Comparison</h2>
                         <a href="#" class="comparison__viewAll">View All</a>
                     </div>
+
                     <div class="comparison__card">
-                        <div class="comparison__us">
-                            <img src="" alt="us flag" class="comparison__flag">
-                            <p class="comparison__country">United States</p>
-                            <div class="comparison__progressBar">bar</div>
-                            <p class="comparison__percent">93%</p>
-                        </div>
-                        <div class="comparison__italy">
-                            <img src="" alt="italy flag" class="comparison__flag">
-                            <p class="comparison__country">Italy</p>
-                            <div class="comparison__progressBar">bar</div>
-                            <p class="comparison__percent">73%</p>
-                        </div>
-                        <div class="comparison__spain">
-                            <img src="" alt="spain flag" class="comparison__flag">
-                            <p class="comparison__country">Spain</p>
-                            <div class="comparison__progressBar">bar</div>
-                            <p class="comparison__percent">13%</p>
 
+                        <div class="comparison__country">
+                            <div class="comparison__titleBox">
+                                <img class="comparison__flag" src="/img/optimized/flag-usa.png" alt="usa flag">
+                                <p class="comparison__countryName">United States</p>
+                            </div>
+                            <div class="comparison__progressBar">
+                                <span class="comparison__bar comparison__bar--usa"></span>
+                                <span class="comparison__percent ">93%</span>
+                            </div>
                         </div>
+
+                        <div class="comparison__country">
+                            <div class="comparison__titleBox">
+                                <img class="comparison__flag" src="/img/optimized/flag-italy.png" alt="italy flag">
+                                <p class="comparison__countryName">Italy</p>
+                            </div>
+                            <div class="comparison__progressBar">
+                                <span class="comparison__bar comparison__bar--italy"></span>
+                                <span class="comparison__percent">73%</span>
+                            </div>
+                        </div>
+
+                        <div class="comparison__country">
+                            <div class="comparison__titleBox">
+                                <img class="comparison__flag" src="/img/optimized/flag-spain.png" alt="spain flag">
+                                <p class="comparison__countryName">Spain</p>
+                            </div>
+                            <div class="comparison__progressBar">
+                                <span class="comparison__bar comparison__bar--spain"></span>
+                                <span class="comparison__percent">13%</span>
+                            </div>
+                        </div>
+
                     </div>
-
                 </section>
             </div>
 
