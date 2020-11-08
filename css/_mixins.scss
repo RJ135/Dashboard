@@ -33,7 +33,7 @@
 }
 
 @mixin currency{
-    width: $size-currency;
+    width: auto;
     height: $size-currency;
     border-radius: $radius-currency;
 }
